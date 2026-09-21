@@ -1,0 +1,77 @@
+/* ===========================
+   Responsive — mobile-first breakpoints, testat pana la 320px
+=========================== */
+
+@media (max-width: 992px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+  .about__portrait {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-card--featured {
+    grid-column: span 2;
+    grid-template-columns: 1fr;
+  }
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: clamp(56px, 12vw, 90px) 0;
+  }
+  .navbar__toggle {
+    display: flex;
+  }
+  .navbar__nav {
+    display: none;
+  }
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-card--featured {
+    grid-column: span 1;
+  }
+  .custom-cursor {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero__actions .btn {
+    width: 100%;
+  }
+  .timeline {
+    padding-left: 24px;
+  }
+  .timeline__dot {
+    left: -29.5px;
+  }
+  .modal__body {
+    padding: 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

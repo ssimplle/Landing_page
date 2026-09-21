@@ -1,0 +1,53 @@
+/* Design tokens si tema (dark/light), respectand prefers-color-scheme si localStorage. */
+:root {
+  --font-heading: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --transition: 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  --nav-height: 84px;
+  --accent: #6c63ff;
+  --accent-2: #4f9dff;
+  --accent-gradient: linear-gradient(135deg, #6c63ff 0%, #4f9dff 100%);
+}
+
+:root,
+:root[data-theme="dark"] {
+  --bg: #08080c;
+  --bg-alt: #0f1016;
+  --surface: #12131a;
+  --surface-alt: #171821;
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #f4f5f7;
+  --text-muted: #9a9ba6;
+  --shadow-soft: 0 20px 60px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 0 1px rgba(108, 99, 255, 0.15), 0 20px 50px rgba(108, 99, 255, 0.15);
+}
+
+:root[data-theme="light"] {
+  --bg: #f5f6fa;
+  --bg-alt: #ffffff;
+  --surface: #ffffff;
+  --surface-alt: #eef0f6;
+  --border: rgba(10, 10, 20, 0.1);
+  --text: #14151c;
+  --text-muted: #52546b;
+  --shadow-soft: 0 20px 60px rgba(20, 20, 40, 0.12);
+  --shadow-glow: 0 0 0 1px rgba(108, 99, 255, 0.18), 0 20px 50px rgba(108, 99, 255, 0.12);
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]):not([data-theme="light"]) {
+    --bg: #f5f6fa;
+    --bg-alt: #ffffff;
+    --surface: #ffffff;
+    --surface-alt: #eef0f6;
+    --border: rgba(10, 10, 20, 0.1);
+    --text: #14151c;
+    --text-muted: #52546b;
+    --shadow-soft: 0 20px 60px rgba(20, 20, 40, 0.12);
+    --shadow-glow: 0 0 0 1px rgba(108, 99, 255, 0.18), 0 20px 50px rgba(108, 99, 255, 0.12);
+  }
+}

@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victor Caraman — Junior Full-Stack Developer | Portofoliu</title>
+  <meta name="description" content="Victor Caraman, Junior Full-Stack Developer, pasionat de aplicatii web moderne si cod curat. Portofoliu interactiv, cu proiecte, experienta si detalii de contact." />
+  <meta name="theme-color" content="#08080c" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Victor Caraman — Junior Full-Stack Developer" />
+  <meta property="og:description" content="Pasionat de aplicatii web moderne si cod curat, de la interfata pana la logica din spate." />
+  <meta property="og:image" content="/assets/images/hero-poster.jpeg" />
+  <meta property="og:locale" content="ro_RO" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+<body>
+  <a class="visually-hidden" href="#continut">Sari la continut</a>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner container">
+      <a href="#acasa" class="navbar__logo">Victor<span class="dot">.</span>dev</a>
+
+      <nav class="navbar__nav" aria-label="Navigare principala">
+        <a href="#acasa" class="nav-link">Acasa</a>
+        <a href="#despre" class="nav-link">Despre mine</a>
+        <a href="#proiecte" class="nav-link">Proiecte</a>
+        <a href="#experienta" class="nav-link">Experienta</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Comuta tema deschisa/inchisa">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+        <button class="navbar__toggle" id="nav-toggle" aria-label="Deschide meniul" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Overlay meniu mobil -->
+  <nav class="nav-overlay" id="nav-overlay" aria-label="Navigare mobila">
+    <a href="#acasa" class="nav-link">Acasa</a>
+    <a href="#despre" class="nav-link">Despre mine</a>
+    <a href="#proiecte" class="nav-link">Proiecte</a>
+    <a href="#experienta" class="nav-link">Experienta</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <main id="continut">
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="acasa">
+      <div class="hero__media">
+        <video
+          id="hero-video"
+          data-lazy
+          data-autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="/assets/images/hero-poster.jpeg"
+          aria-hidden="true">
+          <source data-src="/assets/video/hero-loop.mp4" type="video/mp4" />
+        </video>
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="container hero__content">
+        <p class="hero__status">
+          <span class="status-dot"></span> Disponibil pentru colaborari
+        </p>
+        <h1 class="hero__title">
+          <span class="line">Salut, sunt Victor Caraman,</span>
+          <span class="line"><span class="text-gradient">Junior Full-Stack Developer</span></span>
+        </h1>
+        <p class="hero__subtitle">Pasionat de tehnologie si cod curat. Construiesc aplicatii web moderne, responsive si orientate spre utilizator.</p>
+        <div class="hero__actions">
+          <a href="#proiecte" class="btn btn--primary">Vezi proiectele</a>
+          <a href="#contact" class="btn btn--ghost">Contact</a>
+        </div>
+      </div>
+
+      <a href="#despre" class="scroll-cue" aria-label="Deruleaza in jos">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===== Despre mine ===== -->
+    <section class="about" id="despre">
+      <div class="container about__grid">
+        <div class="about__portrait" id="about-portrait" data-reveal>
+          <picture>
+            <source type="image/avif" srcset="/assets/images/optimized/portrait-fallback-480.avif 480w, /assets/images/optimized/portrait-fallback-768.avif 768w, /assets/images/optimized/portrait-fallback-1200.avif 1200w" sizes="(min-width: 992px) 40vw, 90vw" />
+            <source type="image/webp" srcset="/assets/images/optimized/portrait-fallback-480.webp 480w, /assets/images/optimized/portrait-fallback-768.webp 768w, /assets/images/optimized/portrait-fallback-1200.webp 1200w" sizes="(min-width: 992px) 40vw, 90vw" />
+            <img
+              src="/assets/images/portrait-fallback.png"
+              alt="Portret Victor Caraman"
+              width="1536"
+              height="1024"
+              loading="lazy"
+              decoding="async" />
+          </picture>
+        </div>
+
+        <div>
+          <p class="section-tag" data-reveal>Despre mine</p>
+          <h2 class="section-title" data-reveal>Junior Full-Stack Developer, pasionat de aplicatii web bine construite.</h2>
+          <p class="about__text" data-reveal>
+            Sunt Victor Caraman, un dezvoltator web full-stack junior, interesat de construirea de aplicatii moderne,
+            de la interfete curate pana la logica si bazele de date din spatele lor. Imi place sa invat constant
+            unelte noi pentru a scrie cod mai bun si mai sigur.
+          </p>
+
+          <div class="skills-list" data-reveal>
+            <div class="skill-badge">
+              <span class="skill-badge__icon" style="--icon-color:#e34f26">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 2l1.64 18.36L12 22l7.36-1.64L21 2H3z"/></svg>
+              </span>
+              <span class="skill-badge__body">
+                <span class="skill-badge__name">HTML5</span>
+                <span class="skill-badge__bar"><span data-level="90"></span></span>
+              </span>
+            </div>
+            <div class="skill-badge">
+              <span class="skill-badge__icon" style="--icon-color:#264de4">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 2l1.64 18.36L12 22l7.36-1.64L21 2H3z"/></svg>
+              </span>
+              <span class="skill-badge__body">
+                <span class="skill-badge__name">CSS3</span>
+                <span class="skill-badge__bar"><span data-level="88"></span></span>
+              </span>
+            </div>
+            <div class="skill-badge">
+              <span class="skill-badge__icon" style="--icon-color:#f7df1e">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h18v18H3V3z"/></svg>
+              </span>
+              <span class="skill-badge__body">
+                <span class="skill-badge__name">JavaScript</span>
+                <span class="skill-badge__bar"><span data-level="85"></span></span>
+              </span>
+            </div>
+            <div class="skill-badge">
+              <span class="skill-badge__icon" style="--icon-color:#61dafb">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="2.2"/></svg>
+              </span>
+              <span class="skill-badge__body">
+                <span class="skill-badge__name">React</span>
+                <span class="skill-badge__bar"><span data-level="75"></span></span>
+              </span>
+            </div>
+            <div class="skill-badge">
+              <span class="skill-badge__icon" style="--icon-color:#777bb4">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6.5C6.75 6.5 2.5 8.9 2.5 12s4.25 5.5 9.5 5.5S21.5 15.1 21.5 12 17.25 6.5 12 6.5z"/></svg>
+              </span>
+              <span class="skill-badge__body">
+                <span class="skill-badge__name">PHP</span>
+                <span class="skill-badge__bar"><span data-level="70"></span></span>
+              </span>
+            </div>
+            <div class="skill-badge">
+              <span class="skill-badge__icon" style="--icon-color:#f05032">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.62 11.11L12.89 2.38a1.31 1.31 0 00-1.85 0L9.2 4.22l2.33 2.33a1.55 1.55 0 011.97 1.98l2.25 2.25a1.55 1.55 0 11-.93.87l-2.1-2.1v5.53a1.55 1.55 0 11-1.28-.05V11.4a1.55 1.55 0 01-.85-2.03L8.3 7.06l-5.92 5.92a1.31 1.31 0 000 1.85l8.73 8.73a1.31 1.31 0 001.85 0l8.66-8.66a1.31 1.31 0 000-1.85z"/></svg>
+              </span>
+              <span class="skill-badge__body">
+                <span class="skill-badge__name">Git</span>
+                <span class="skill-badge__bar"><span data-level="80"></span></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Proiecte ===== -->
+    <section class="projects" id="proiecte">
+      <div class="container">
+        <p class="section-tag" data-reveal>Proiecte</p>
+        <h2 class="section-title" data-reveal>Proiecte — lucrari selectate</h2>
+
+        <div class="projects__filters" id="projects-filters" data-reveal></div>
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===== Experienta / Parcurs ===== -->
+    <section class="experience" id="experienta">
+      <div class="container">
+        <p class="section-tag" data-reveal>Parcurs</p>
+        <h2 class="section-title" data-reveal>Experienta si mod de lucru</h2>
+
+        <div class="timeline">
+          <div class="timeline__item" data-reveal>
+            <span class="timeline__dot"></span>
+            <span class="timeline__date">Etapa 01</span>
+            <div class="timeline__card">
+              <h3>Descoperire</h3>
+              <p>Inteleg obiectivele, utilizatorii si cerintele inainte de a scrie orice cod.</p>
+            </div>
+          </div>
+          <div class="timeline__item" data-reveal>
+            <span class="timeline__dot"></span>
+            <span class="timeline__date">Etapa 02</span>
+            <div class="timeline__card">
+              <h3>Design</h3>
+              <p>Planific structura, layout-ul si experienta pentru fiecare dimensiune de ecran.</p>
+            </div>
+          </div>
+          <div class="timeline__item" data-reveal>
+            <span class="timeline__dot"></span>
+            <span class="timeline__date">Etapa 03</span>
+            <div class="timeline__card">
+              <h3>Dezvoltare</h3>
+              <p>Construiesc cod curat si usor de intretinut, atat front-end cat si back-end.</p>
+            </div>
+          </div>
+          <div class="timeline__item" data-reveal>
+            <span class="timeline__dot"></span>
+            <span class="timeline__date">Etapa 04</span>
+            <div class="timeline__card">
+              <h3>Testare</h3>
+              <p>Verific functionalitatea, responsivitatea si cazurile limita.</p>
+            </div>
+          </div>
+          <div class="timeline__item" data-reveal>
+            <span class="timeline__dot"></span>
+            <span class="timeline__date">Etapa 05</span>
+            <div class="timeline__card">
+              <h3>Lansare</h3>
+              <p>Public proiectul si monitorizez performanta pentru imbunatatiri ulterioare.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="contact" id="contact">
+      <div class="container contact__grid contact__grid--single">
+        <div data-reveal>
+          <p class="section-tag">Contact</p>
+          <h2 class="section-title">Hai sa construim ceva impreuna.</h2>
+          <p class="about__text">Ai un proiect in minte sau vrei doar sa spui salut? Iti raspund cu drag.</p>
+
+          <ul class="contact-list">
+            <li><span>Email</span><a href="mailto:ssimplle@proton.me">ssimplle@proton.me</a></li>
+            <li><span>Telefon</span><a href="tel:061100101">061 100 101</a></li>
+            <li><span>GitHub</span><a href="https://github.com/ssimplle" target="_blank" rel="noopener">github.com/ssimplle</a></li>
+            <!-- LinkedIn: adauga <li><span>LinkedIn</span><a href="...">...</a></li> aici cand ai link-ul -->
+          </ul>
+
+          <div class="contact__socials">
+            <a href="mailto:ssimplle@proton.me" aria-label="Trimite email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5h20v14H2V5zm2 2.2V17h16V7.2l-8 5.4-8-5.4zm.6-.2L12 10.6 19.4 5H4.6z"/></svg>
+            </a>
+            <a href="https://github.com/ssimplle" target="_blank" rel="noopener" aria-label="Profil GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 015 0c1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+            </a>
+            <!-- LinkedIn: adauga link-ul social aici cand il ai -->
+          </div>
+
+          <a href="tel:061100101" class="phone-card" aria-label="Suna la 061 100 101">
+            <span class="phone-card__label">Sau suna-ma direct</span>
+            <span class="phone-card__number">061 100 101</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="footer__name">Victor<span class="dot">.</span>dev</p>
+        <p class="footer__role">Junior Full-Stack Developer</p>
+      </div>
+      <div class="footer__links">
+        <a href="https://github.com/ssimplle" target="_blank" rel="noopener">GitHub</a>
+        <!-- LinkedIn: adauga <a href="...">LinkedIn</a> aici cand ai link-ul -->
+        <a href="mailto:ssimplle@proton.me">ssimplle@proton.me</a>
+      </div>
+      <p class="footer__copy">&copy; 2026 Victor Caraman. Toate drepturile rezervate.</p>
+    </div>
+  </footer>
+
+  <!-- ===== Modal galerie proiect ===== -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <button class="modal__close" aria-label="Inchide fereastra">&times;</button>
+      <div class="modal__media"></div>
+      <div class="modal__body">
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+        <div class="tags" id="modal-tags"></div>
+        <div class="modal__actions">
+          <a id="modal-demo" class="btn btn--primary btn--sm" target="_blank" rel="noopener">Live demo</a>
+          <a id="modal-code" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">Cod sursa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

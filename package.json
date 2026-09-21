@@ -1,0 +1,19 @@
+{
+  "name": "portofoliu-web-developer",
+  "version": "1.0.0",
+  "description": "Portofoliu single-page pentru un web developer, construit cu Vite, JavaScript vanilla si GSAP.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "optimize-images": "node scripts/optimize-images.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.4",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0"
+  }
+}
